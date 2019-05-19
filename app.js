@@ -44,7 +44,7 @@ connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
     password : 'password',
-    port     : 80,
+    port     : 8000,
     database : 'YTMT'
 });
 
@@ -81,6 +81,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-var server = app.listen(80);
+var server = app.listen(8000);
 module.exports = app;
 
